@@ -5,22 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manegit - Inicio</title>
         <link rel="shortcut icon" href="./assets/img/faviconV2.png" type="image/x-icon"> <!--Favicon-->
-        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Link a hoja de estilos en cascada-->
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Link a hoja de estilos minificada de bootstrap-->
+        <link rel="stylesheet" href="./css/estilos.css"><!--Link a mi hoja de estilos-->
     </head>
     <body>
         
-        <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header class="header"> <!--Selecciono tipo de contenedor-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"><!--ACA ESTA LA NAVEGACION DE MI WEB  con bootstraps colores casi vanilla ya que el disenio es asi-->
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="https://manegit.com/wp-content/uploads/2021/12/logo.png" alt="logo de empresa Manegit" width="100px">
+                <img class="mx-5" src="https://i0.wp.com/manegit.com/wp-content/uploads/2021/03/logo.png" alt="logo de empresa Manegit" width="200px" height="60px"> <!--logo empresa-->
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
@@ -44,15 +44,24 @@
             </div>
           </nav>
         </header>
-        <main class="container"> 
-            <h1>Hacemos despegar tus ventas al infinito</h1> <!--TITULO PRINCIPAL-->
-            <section>
-                <h2>Potencia los resultados de tu negocio</h2><!--titulo de la seccion-->
-                    <p>Bajamos a Tierra a la tecnología. Sentamos los conocimientos y procesos. Integramos todo tu ecosistema digital para que despegues tus ventas.</p>
-                    <a target="_blank" href="https://calendly.com/manegit/30min?month=2023-06">Agendar una Renión Gratis</a><!--LA IDEA ES QUE ESTO SEA UN BOTON QUE TE ENVÍE A CALENDLY PARA AGENDAR UNA REUNION-->
-                    <img src="https://manegit.com/wp-content/uploads/2022/05/nave.png" alt="Cohete volando por el espacio"> 
-            </section>    
-            <img src="https://manegit.com/wp-content/uploads/2022/05/banner22.png" alt="Banner informativo del paso a paso del proceso">
+        <main class="container-fluid"> <!--Selecciono tipo de contenedor-->
+            <div class="seccionUno">
+                <div class="container">
+                  <div class="row">
+                    <div class="col -6 my-auto">
+                      <h1 class="text-sm-start">Hacemos despegar tus ventas al infinito</h1>
+                      <p>Bajamos a Tierra a la tecnología. Sentamos los conocimientos y procesos. Integramos todo tu ecosistema digital para que despegues tus ventas.</p>
+                      <a class="btn btn-success btn-lg" target="_blank" href="https://calendly.com/manegit/30min?month=2023-06">Agendar una Renión Gratis</a><!--LA IDEA ES QUE ESTO SEA UN BOTON QUE TE ENVÍE A CALENDLY PARA AGENDAR UNA REUNION-->
+                    </div>
+                    <div class="col -6">
+                      <img class="img-fluid vw-100" src="https://manegit.com/wp-content/uploads/2022/05/nave.png" alt="Cohete volando por el espacio">
+                    </div>                   
+                  </div>
+                </div> 
+             </div>
+            <div>
+              <img class="img-fluid" src="https://manegit.com/wp-content/uploads/2022/05/banner22.png" alt="Banner informativo del paso a paso del proceso">
+             </div>
             <section>
                 <h2>| Estrategia y tácticas para tu negocio</h2>
                 <h2>CONSULTORÍA ONLINE</h2>
@@ -219,7 +228,7 @@
                 </form>
              </section>
         </main>
-        <footer class="container-fluid">
+        <footer class="container-fluid"> <!--Selecciono tipo de contenedor-->
             <nav>
                 <ul class="listaNav"> <!--ACA ESTA LA NAVEGACION DE MI WEB-->
                     <li class="linkNav"><a class="" href="#">Inicio</a></li>
@@ -239,6 +248,6 @@
             </section>
             <p>Manegit - Todos los derechos reservados &copy;<p>
         </footer>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script><!--script de js para utilizar la hoja de estilos minificada de bootstrap-->
     </body>
 </html>

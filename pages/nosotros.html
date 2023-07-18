@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manegit - Inicio</title>
         <link rel="shortcut icon" href="./assets/img/faviconV2.png" type="image/x-icon"> <!--Favicon-->
-        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Link a hoja de estilos en cascada-->
+        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Link a hoja de estilos minificada de bootstrap-->
+        <link rel="stylesheet" href="../css/estilos.css"><!--Link a mi hoja de estilos-->
     </head>
     <body>
         <header>
-                <a href="../index.html">
-                    <img src="https://manegit.com/wp-content/uploads/2021/12/logo.png" alt="logo de empresa Manegit"> <!--ACA ESTA EL LOGO, USO ESTAS URL PARA LA IMAGENES YA QUE LAS TENGO A MANO EN WORDPRESS-->
-                </a>
-                <nav>
-                    <ul><!--ACA ESTA LA NAVEGACION DE MI WEB -->
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="../pages/blog.html">Blog</a></li>
-                        <li><a href="../pages/recursos.html">Recursos</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+            <a href="../index.html">
+                <img src="https://manegit.com/wp-content/uploads/2021/12/logo.png" alt="logo de empresa Manegit"> <!--ACA ESTA EL LOGO-->
+            </a>
+            <nav><!--ACA ESTA LA NAVEGACION DE MI WEB -->
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="./recursos.html">Recursos</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
+        <main class="container">
             <h1>Nosotros</h1>
             <section>
                 <h2>| Trabajamos codo a codo con nuestros clientes.</h2>
@@ -94,7 +95,7 @@
                 </form>
              </section> 
         </main>
-        <footer>
+        <footer class="container-fluid">
             <nav>
                 <ul> <!--ACA ESTA LA NAVEGACION DE MI WEB-->
                     <li><a href="#">Inicio</a></li>
@@ -115,8 +116,6 @@
             <a target="_blank" href="https://manegit.com/">Manegit Oficial</a>
             <p>Manegit - Todos los derechos reservados &copy;<p>
         </footer>
-        </footer>
-
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script><!--script de js para utilizar la hoja de estilos minificada de bootstrap-->
     </body>
 </html>

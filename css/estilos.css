@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+/*
+*{
+    /*margin: 0px;
+    padding: 0px;
+}*/
 
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 header{
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .divLogo{
@@ -57,4 +62,8 @@ footer{
     .linkNav{
         font-size: 1.1em; 
     }
+} /*media para el menu hamburguesa*/
+
+btn btn-success btn-lg colorBoton{
+    background-color: #683ce4;
 }

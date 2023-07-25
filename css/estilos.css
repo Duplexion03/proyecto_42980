@@ -81,6 +81,7 @@ main{
 }
 
 .bg-sectionTres{
+    height: 80vh;
     background-color: #260071;
 }
 
@@ -94,6 +95,9 @@ main{
     background-repeat: repeat-x; /*repeat x para crear una guarda con el background*/
     background-size: contain;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{

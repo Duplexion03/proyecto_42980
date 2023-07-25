@@ -71,7 +71,7 @@ main{
 }
 
 
-.botonSeccionUno{
+.botonesHome{
     background-color: #683ce4;
 }
 
@@ -81,7 +81,6 @@ main{
 }
 
 .bg-sectionTres{
-    height: 80vh;
     background-color: #260071;
 }
 

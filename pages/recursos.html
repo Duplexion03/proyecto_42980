@@ -4,25 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manegit - Inicio</title>
-        <link rel="shortcut icon" href="./assets/img/faviconV2.png" type="image/x-icon"> <!--Favicon-->
-        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!--Link a hoja de estilos minificada de bootstrap-->
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> <!--Favicon-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!--Link a hoja de estilos de bootstrap-->
         <link rel="stylesheet" href="../css/estilos.css"><!--Link a mi hoja de estilos-->
     </head>
     <body>
-        <header>
-                <a href="../index.html">
-                    <img src="https://manegit.com/wp-content/uploads/2021/12/logo.png" alt="logo de empresa Manegit"> <!--ACA ESTA EL LOGO-->
-                </a>
-                <nav><!--ACA ESTA LA NAVEGACION DE MI WEB -->
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/blog.html">Blog</a></li>
-                        <li><a href="#">Recursos</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
+        <header class="header"> <!--Selecciono tipo de contenedor-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white"><!--ACA ESTA LA NAVEGACION DE MI WEB  con bootstraps colores casi vanilla ya que el disenio es asi-->
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img class="mx-5" src="https://i0.wp.com/manegit.com/wp-content/uploads/2021/03/logo.png" alt="logo de empresa Manegit" width="200px" height="60px"> <!--logo empresa-->
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-75 justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </nav>
-        </header>
+                  </div>
+                </div>
+              </nav>
+            </header>
         <main>
             <h1>Recursos</h1>
             <img src="https://i0.wp.com/manegit.com/wp-content/uploads/2021/12/banner-recursos-material-1024x289.png" alt="banner informativo">
@@ -82,6 +99,6 @@
             <p>Manegit - Todos los derechos reservados &copy;<p>
         </footer>
 
-        <script src="./js/bootstrap.bundle.min.js"></script><!--script de js para utilizar la hoja de estilos minificada de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!--script de js para utilizar la hoja de estilos minificada de bootstrap-->
     </body>
 </html>

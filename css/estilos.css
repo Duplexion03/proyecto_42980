@@ -1,29 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
-/*
-*{
-    /*margin: 0px;
+
+/* *{
+    margin: 0px;
     padding: 0px;
-}*/
+}/**/
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /*fuente propia*/
 }
 
 header{
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
-.divLogo{
-    background-color: white;
-    text-align: center;
-}
-
-.nav{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (max-width: 768px){
+    .listaNav{
+        flex-direction: column;
+    }
+    .linkNav{
+        font-size: 1.1em; 
+    }
+} /*media para el menu hamburguesa*/
 
 .listaNav{
     list-style: none;
@@ -43,27 +40,62 @@ header{
     color: #3c3c3b;
 }
 
+.divLogo{
+    background-color: white;
+    text-align: center;
+}
+
+.nav{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .coloLink{
     color: #3c3c3b;
     text-decoration: none;
 }
 
 main{
+    padding-left:0;
+    padding-right:0;
+}
 
+.textoBlanco{
+    color: #fff;
+}
+
+.textoAmarillo{
+        color: #ffbe2c;
+}
+
+
+.botonSeccionUno{
+    background-color: #683ce4;
+}
+
+.container-fluid{
+    padding-left:0;
+    padding-right:0;
+}
+
+.bg-sectionTres{
+    background-color: #260071;
+}
+
+.bg-vio{
+    background-color: #683ce5;
+}
+
+.fondoSection{
+    height: 40vh;
+    background-image: url(https://manegit.com/wp-content/uploads/2022/05/banner3-agendarconsultoria.png);
+    background-repeat: repeat-x; /*repeat x para crear una guarda con el background*/
+    background-size: contain;
+    background-position: center center;
 }
 
 footer{
-
-}
-@media screen and (max-width: 768px){
-    .listaNav{
-        flex-direction: column;
-    }
-    .linkNav{
-        font-size: 1.1em; 
-    }
-} /*media para el menu hamburguesa*/
-
-btn btn-success btn-lg colorBoton{
-    background-color: #683ce4;
+    background-color: #260071;
 }
